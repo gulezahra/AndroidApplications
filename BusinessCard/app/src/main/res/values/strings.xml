@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BusinessCard</string>
+    <string name="name">Gul e Zahra</string>
+    <string name="designation">Electronic Engineer</string>
+    <string name="address">#25, Block C, Shah Faisal Town, Malir Halt, Karachi, Pakistan.</string>
+    <string name="email">zahra_gul456@yahoo.com</string>
+    <string name="phone">+92-(0)-3212493816</string>
+    <string name="url">https://www.facebook.com/zahra</string>
+    <string name="summary">I am an Entrepreneur. My skills include Application Development, Electronic Circuit Designing, Embedded System Designing, Robotics.</string>
+</resources>
