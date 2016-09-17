@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="form">Login Form</string>
+    <string name="nameOfUser">User Name: </string>
+    <string name="emailOfUser">User Email: </string>
+    <string name="passwordOfUser">Password: </string>
+    <string name="EditTextForUserName">Enter your name</string>
+    <string name="EditTextForEmail">Enter your e-mail</string>
+    <string name="EditTextForPassword">Enter your password</string>
+    <string name="forLogIn">LOG IN</string>
+</resources>
