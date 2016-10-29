@@ -3,39 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.businesscard.MainActivity">
+    tools:context="com.example.android.businessapplication.MainActivity">
 
     <LinearLayout
         android:id="@+id/main_front_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/entrepreneur_background"
+        android:background="#FFFFFF"
         android:orientation="vertical"
         android:padding="4dp">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="4dp"
-            android:background="#168786"
-            android:text="@string/name"
-            android:textColor="#000000"
-            android:textSize="46sp" />
+            android:layout_margin="2dp"
+            android:scaleType="center"
+            android:src="@drawable/cover_photo" />
 
         <TextView
+            style="@style/HeadingTextTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="12dp"
-            android:background="#168786"
-            android:text="@string/designation"
-            android:textColor="#000000"
-            android:textSize="36sp" />
+            android:layout_marginTop="8dp"
+            android:text="@string/name_of_business" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:orientation="horizontal"
             android:padding="4dp">
 
@@ -59,6 +56,30 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hour_icon" />
+
+            <TextView
+                style="@style/TextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/timing" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:orientation="horizontal"
             android:padding="4dp">
 
@@ -73,7 +94,6 @@
                 style="@style/TextTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:layout_weight="1"
                 android:text="@string/email" />
 
@@ -82,6 +102,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:orientation="horizontal"
             android:padding="4dp">
 
@@ -104,6 +125,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:orientation="horizontal"
             android:padding="4dp">
 
@@ -123,27 +145,6 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="8dp"
-            android:background="#000000"
-            android:text="@string/summary"
-            android:textColor="#168786"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:background="#168786"
-            android:onClick="callMe"
-            android:padding="4dp"
-            android:text="Contact Me"
-            android:textAllCaps="true"
-            android:textColor="#000000" />
-
     </LinearLayout>
+
 </ScrollView>

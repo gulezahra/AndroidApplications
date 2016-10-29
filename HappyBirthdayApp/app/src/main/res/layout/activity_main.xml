@@ -1,50 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context="com.example.android.happybirthdayapp.MainActivity">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/happy" />
 
     <TextView
         android:id="@+id/OH"
+        style="@style/TextTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="4dp"
-        android:text="@string/starting_text"
-        style="@style/TextTheme" />
+        android:text="@string/starting_text" />
 
     <ImageView
         android:id="@+id/Card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_below="@id/OH"
         android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:scaleType="fitXY"
         android:src="@drawable/card" />
 
     <TextView
+        android:id="@+id/wishText"
+        style="@style/TextTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/Card"
         android:background="@android:color/background_dark"
-        android:text="@string/wishing_text"
-        style="@style/TextTheme" />
+        android:text="@string/wishing_text" />
 
     <TextView
+        style="@style/TextTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_below="@id/wishText"
         android:text="@string/from_text"
-        android:textAllCaps="true"
-        style="@style/TextTheme" />
+        android:textAllCaps="true" />
 
 </RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">BusinessApplication</string>
+    <string name="name_of_business">FAZAIA DEGREE COLLEGE</string>
+    <string name="address">Shahrah-e-Faisal, PAF Base Faisal, Karachi, Sindh, Pakistan</string>
+    <string name="timing">07:30 AM - 01:30 PM</string>
+    <string name="email">fdc_faisal246@gmail.com</string>
+    <string name="phone">+92 331 2504878</string>
+    <string name="url">https://www.facebook.com/Fazaia-Degree-College-Faisal-Karachi-1105/</string>
+
+</resources>
