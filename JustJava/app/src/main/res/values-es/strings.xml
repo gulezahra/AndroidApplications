@@ -17,10 +17,10 @@
     <string name="chocolate">Chocolate</string>
 
     <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
-    <string name="quantity">Por lo tanto , el número de tazas que le gustaría tener ?</string>
+    <string name="quantity">¿Cuántas tazas te gustaría tener ?</string>
 
     <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=5] -->
-    <string name="initial_quantity_value">0</string>
+    <string name="initial_quantity_value">1</string>
 
     <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
     <string name="order">Ordenar</string>

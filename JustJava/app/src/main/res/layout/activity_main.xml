@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_vertical_margin"
+    android:padding="4dp"
     tools:context=".MainActivity">
 
     <ImageView
@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
         android:hint="@string/name"
         android:inputType="textCapWords"
         android:textColor="#AB6868"
@@ -26,6 +27,7 @@
         android:id="@+id/topping"
         android:layout_below="@id/name_field"
         android:layout_marginTop="16dp"
+        android:layout_margin="8dp"
         android:text="@string/toppings"
         style="@style/HeaderTextStyle" />
 
@@ -49,19 +51,20 @@
         android:id="@+id/quantity"
         android:layout_below="@id/chocolate_checkbox"
         android:layout_marginTop="16dp"
+        android:layout_margin="8dp"
         android:text="@string/quantity"
         style="@style/HeaderTextStyle" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/quantity"
+        android:gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:orientation="horizontal">
 
         <Button
-            android:layout_marginLeft="24dp"
             android:onClick="decrement"
             android:text="-"
             style="@style/ButtonStyle" />
@@ -72,6 +75,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:text="@string/initial_quantity_value"
             android:textSize="30sp"/>
 
@@ -83,10 +88,10 @@
     </LinearLayout>
 
     <Button
-        android:layout_marginTop="16dp"
-        android:layout_below="@id/linearLayout"
+        style="@style/ButtonStyle"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
         android:onClick="submitOrder"
-        android:text="@string/order"
-        style="@style/ButtonStyle" />
+        android:text="@string/order" />
 
 </RelativeLayout>
